@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="QUIZ"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Which Keyword in Kotlin is used to define a constant?" />
+
+    <RadioGroup
+        android:id="@+id/q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/q1o1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="final" />
+
+        <RadioButton
+            android:id="@+id/q1o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="var" />
+
+        <RadioButton
+            android:id="@+id/q1o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="const" />
+
+        <RadioButton
+            android:id="@+id/q1o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="val" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Select the visibility modifiers used in Kotlin?" />
+
+    <CheckBox
+        android:id="@+id/q2o1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="private" />
+
+    <CheckBox
+        android:id="@+id/q2o2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="internal" />
+
+    <CheckBox
+        android:id="@+id/q2o3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="public" />
+
+    <CheckBox
+        android:id="@+id/q2o4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="protected" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+
+</LinearLayout>
